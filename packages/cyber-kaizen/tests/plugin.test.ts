@@ -5,7 +5,7 @@ import { parse } from 'yaml'
 
 const packageRoot = path.resolve(import.meta.dirname, '..')
 const skillsDir = path.join(packageRoot, 'skills')
-// The scaffold ships no skills yet; the retro skill follows its spec in .agents/spec/retro.
+// The scaffold ships no skills yet; the retro skill follows its spec in packages/cyber-kaizen/.agents/spec/retro.
 const skills = existsSync(skillsDir) ? readdirSync(skillsDir) : []
 
 function readJson(file: string): Record<string, unknown> {

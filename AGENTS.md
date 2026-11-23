@@ -6,14 +6,14 @@
 It ships skills only. Its retrospective reads what happened in a repository's agent sessions and
 turns it into changes to the agent setup that the owner approves one at a time.
 
-The plugin ships no skills yet. The `retro` skill is specified in `.agents/spec/retro/`, and that
+The plugin ships no skills yet. The `retro` skill is specified in `packages/cyber-kaizen/.agents/spec/retro/`, and that
 spec still has open questions for the owner to answer. Do not build the skill until they are
 answered, and do not answer them yourself.
 
 | Where | What |
 | --- | --- |
 | `packages/cyber-kaizen` | The plugin, and the npm package `cyber-kaizen` that ships it |
-| `.agents/spec/` | Design specs, one folder per capability |
+| `packages/cyber-kaizen/.agents/spec/` | Design specs for the plugin, one folder per capability |
 
 ## Plugin layout
 

@@ -6,7 +6,7 @@ its cheapest durable form, and writes only what the owner approves. Published to
 `cyber-kaizen`.
 
 The plugin ships no skills yet. The first, `/cyber-kaizen:retro`, is being designed in
-[`.agents/spec/retro`](./.agents/spec/retro/README.md). The rationale is the research topic
+[`packages/cyber-kaizen/.agents/spec/retro`](./packages/cyber-kaizen/.agents/spec/retro/README.md). The rationale is the research topic
 [agent-self-improvement](https://github.com/repobuddy/buddy-agent-harness/tree/main/.research/agent-self-improvement).
 
 ## Install
