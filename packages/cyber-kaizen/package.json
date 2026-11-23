@@ -1,0 +1,56 @@
+{
+	"name": "cyber-kaizen",
+	"version": "0.0.0",
+	"description": "Agent self-improvement: a retrospective that turns what happened in use into lessons the owner approves.",
+	"keywords": [
+		"agent",
+		"retrospective",
+		"self-improvement",
+		"skills",
+		"plugin",
+		"claude-code",
+		"cursor",
+		"codex",
+		"copilot-cli"
+	],
+	"homepage": "https://github.com/cyber-uni/cyber-kaizen",
+	"bugs": {
+		"url": "https://github.com/cyber-uni/cyber-kaizen/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cyber-uni/cyber-kaizen.git",
+		"directory": "packages/cyber-kaizen"
+	},
+	"license": "MIT",
+	"author": "unional <homawong@gmail.com>",
+	"type": "module",
+	"files": [
+		"LICENSE",
+		"plugin.json",
+		"CHANGELOG.md",
+		"skills/",
+		".claude-plugin/plugin.json",
+		".cursor-plugin/plugin.json",
+		".codex-plugin/plugin.json",
+		"com.github.copilot/"
+	],
+	"scripts": {
+		"prepack": "node -e \"require('node:fs').copyFileSync('../../README.md', 'README.md')\"",
+		"test": "vitest run",
+		"typecheck": "tsc --noEmit"
+	},
+	"devDependencies": {
+		"@types/node": "^24.10.1",
+		"typescript": "^7.0.2",
+		"vitest": "^5.0.3",
+		"yaml": "^2.9.1"
+	},
+	"engines": {
+		"node": ">=22"
+	},
+	"publishConfig": {
+		"access": "public",
+		"provenance": true
+	}
+}
