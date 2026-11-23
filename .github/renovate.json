@@ -1,0 +1,11 @@
+{
+	"extends": ["github>repobuddy/renovate-preset"],
+	"platformAutomerge": true,
+	"packageRules": [
+		{
+			"description": "Auto-merge non-major updates. Majors stay manual.",
+			"matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+			"automerge": true
+		}
+	]
+}
