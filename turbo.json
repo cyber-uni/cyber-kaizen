@@ -2,6 +2,9 @@
 	"$schema": "https://turbo.build/schema.json",
 	"agentGuidance": false,
 	"tasks": {
+		"build": {
+			"outputs": []
+		},
 		"typecheck": {},
 		"test": {}
 	}
