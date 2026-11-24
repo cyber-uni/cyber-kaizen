@@ -1,5 +1,5 @@
 {
-	"name": "cyber-kaizen",
+	"name": "@cyber-uni/self-improve",
 	"version": "0.0.0",
 	"description": "Agent self-improvement: a retrospective that turns what happened in use into lessons the owner approves.",
 	"keywords": [
@@ -13,14 +13,14 @@
 		"codex",
 		"copilot-cli"
 	],
-	"homepage": "https://github.com/cyber-uni/cyber-kaizen",
+	"homepage": "https://github.com/cyber-uni/self-improve",
 	"bugs": {
-		"url": "https://github.com/cyber-uni/cyber-kaizen/issues"
+		"url": "https://github.com/cyber-uni/self-improve/issues"
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/cyber-uni/cyber-kaizen.git",
-		"directory": "packages/cyber-kaizen"
+		"url": "git+https://github.com/cyber-uni/self-improve.git",
+		"directory": "packages/self-improve"
 	},
 	"license": "MIT",
 	"author": "unional <homawong@gmail.com>",

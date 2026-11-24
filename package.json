@@ -1,5 +1,5 @@
 {
-	"name": "cyber-kaizen-monorepo",
+	"name": "self-improve-monorepo",
 	"private": true,
 	"type": "module",
 	"scripts": {
@@ -11,11 +11,11 @@
 		"release": "changeset publish",
 		"test": "turbo run test",
 		"typecheck": "turbo run typecheck",
-		"plugin:build": "universal-plugin plugin build --root packages/cyber-kaizen && biome format --write packages/cyber-kaizen/plugin.json",
+		"plugin:build": "universal-plugin plugin build --root packages/self-improve && biome format --write packages/self-improve/plugin.json",
 		"plugin:check": "node scripts/check-plugin-build.mjs",
-		"plugin:validate": "universal-plugin plugin validate --root packages/cyber-kaizen",
+		"plugin:validate": "universal-plugin plugin validate --root packages/self-improve",
 		"verify": "pnpm check && pnpm plugin:check && pnpm plugin:validate && turbo run typecheck test",
-		"version": "changeset version && universal-plugin plugin version --from-package --root packages/cyber-kaizen && pnpm plugin:build"
+		"version": "changeset version && universal-plugin plugin version --from-package --root packages/self-improve && pnpm plugin:build"
 	},
 	"devDependencies": {
 		"@biomejs/biome": "^2.6.0",
