@@ -8,10 +8,10 @@ import { tmpdir } from 'node:os'
 import path from 'node:path'
 
 const DERIVED = [
-	'packages/cyber-kaizen/.claude-plugin',
-	'packages/cyber-kaizen/.cursor-plugin',
-	'packages/cyber-kaizen/.codex-plugin',
-	'packages/cyber-kaizen/com.github.copilot',
+	'packages/self-improve/.claude-plugin',
+	'packages/self-improve/.cursor-plugin',
+	'packages/self-improve/.codex-plugin',
+	'packages/self-improve/com.github.copilot',
 	'.claude-plugin/marketplace.json',
 ]
 

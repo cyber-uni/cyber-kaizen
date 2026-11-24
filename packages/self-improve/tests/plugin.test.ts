@@ -5,7 +5,7 @@ import { parse } from 'yaml'
 
 const packageRoot = path.resolve(import.meta.dirname, '..')
 const skillsDir = path.join(packageRoot, 'skills')
-// The scaffold ships no skills yet; the retro skill follows its spec in packages/cyber-kaizen/.agents/spec/retro.
+// The scaffold ships no skills yet; the retro skill follows its spec in packages/self-improve/.agents/spec/retro.
 const skills = existsSync(skillsDir) ? readdirSync(skillsDir) : []
 
 function readJson(file: string): Record<string, unknown> {
@@ -19,9 +19,9 @@ function frontmatter(file: string): Record<string, unknown> {
 }
 
 describe('the shipped plugin', () => {
-	it('is named and published as cyber-kaizen', () => {
-		expect(readJson('plugin.json').name).toBe('cyber-kaizen')
-		expect(readJson('package.json').name).toBe('cyber-kaizen')
+	it('is named self-improve and published as @cyber-uni/self-improve', () => {
+		expect(readJson('plugin.json').name).toBe('self-improve')
+		expect(readJson('package.json').name).toBe('@cyber-uni/self-improve')
 	})
 
 	it.skipIf(skills.length === 0).each(skills)(

@@ -191,7 +191,7 @@ importers:
         specifier: ^0.23.1
         version: 0.23.1
 
-  packages/cyber-kaizen:
+  packages/self-improve:
     devDependencies:
       '@types/node':
         specifier: ^24.10.1
